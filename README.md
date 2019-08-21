@@ -24,7 +24,8 @@ Using the excellent [BinaryBuilder.jl](https://github.com/JuliaPackaging/BinaryB
 - [CoordinateTransformations.jl](https://github.com/FugroRoames/CoordinateTransformations.jl) is a Julia package to manage simple or complex networks of coordinate system transformations.
 - [Shapefile.jl](https://github.com/JuliaGeo/Shapefile.jl) is a Julia package that parses in ESRI Shapefiles.
 - [GeoJSON.jl](https://github.com/JuliaGeo/GeoJSON.jl) is a Julia package that provides utilities for encoding and decoding GeoJSON formatted data.
-- [NearestNeighbors.jl](https://github.com/KristofferC/NearestNeighbors.jl) is Julia package
+- [NearestNeighbors.jl](https://github.com/KristofferC/NearestNeighbors.jl) is Julia package to perform high performance nearest neighbor searches in arbitrarily high dimensions.
+- [GeoStats.jl](https://github.com/juliohm/GeoStats.jl) is an extensible Julia framework for high-performance geostatistics
 
 #### Other Projects
 - [OpenStreetMap.jl](https://github.com/tedsteiner/OpenStreetMap.jl) and [OpenStreetMap2.jl](https://github.com/yeesian/OpenStreetMap2.jl) provides basic functionality for parsing, viewing, and working with OpenStreetMap map data.
