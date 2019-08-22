@@ -24,11 +24,13 @@ Using the excellent [BinaryBuilder.jl](https://github.com/JuliaPackaging/BinaryB
 - [CoordinateTransformations.jl](https://github.com/FugroRoames/CoordinateTransformations.jl) is a Julia package to manage simple or complex networks of coordinate system transformations.
 - [Shapefile.jl](https://github.com/JuliaGeo/Shapefile.jl) is a Julia package that parses in ESRI Shapefiles.
 - [GeoJSON.jl](https://github.com/JuliaGeo/GeoJSON.jl) is a Julia package that provides utilities for encoding and decoding GeoJSON formatted data.
-- [NearestNeighbors.jl](https://github.com/KristofferC/NearestNeighbors.jl) is Julia package to perform high performance nearest neighbor searches in arbitrarily high dimensions.
+- [NearestNeighbors.jl](https://github.com/KristofferC/NearestNeighbors.jl) is Julia package to perform high performance nearest neighbor searches in arbitrarily high dimensions. It uses Kd-trees.
+- [SpatialIndexing.jl](https://github.com/alyst/SpatialIndexing.jl) provides a native RTree implementation.
+- [RegionTrees.jl](https://github.com/rdeits/RegionTrees.jl) provides Quadtrees, Octrees and their N-Dimensional cousins. 
 - [GeoStats.jl](https://github.com/juliohm/GeoStats.jl) is an extensible Julia framework for high-performance geostatistics
 
 #### Other Projects
-- [OpenStreetMap.jl](https://github.com/tedsteiner/OpenStreetMap.jl) and [OpenStreetMap2.jl](https://github.com/yeesian/OpenStreetMap2.jl) provides basic functionality for parsing, viewing, and working with OpenStreetMap map data.
+- [OpenStreetMapX.jl](https://github.com/pszufe/OpenStreetMapX.jl) provides basic functionality for parsing, viewing, and working with OpenStreetMap map data.
 - [LasIO.jl](https://github.com/visr/LasIO.jl) is native Julia package for working with .las pointcloud data. [LazIO.jl](https://github.com/evetion/LazIO.jl) does the same for compressed .laz pointcloud data.
 
 
