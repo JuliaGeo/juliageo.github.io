@@ -2,5 +2,5 @@ theme: jekyll-theme-cayman
 title: JuliaGeo
 description: ["JuliaGeo is an organization that contains a number of related Julia projects for manipulating, querying, and processing geospatial geometry data. We aim to provide a common interface between geospatial packages."]
 github:
-  repository_url: ["https://github.com/juliageo"]
+  repository_url: ["https://github.com/JuliaGeo"]
   is_project_page: True
