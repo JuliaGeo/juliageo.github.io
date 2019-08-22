@@ -1,6 +1,3 @@
-## JuliaGeo
-JuliaGeo is an organization that contains a number of related Julia projects for manipulating, querying, and processing geospatial geometry data. We aim to provide a common interface between geospatial packages.
-
 ### Get involved
 Communcation is mostly done on the Julia [Discourse](https://discourse.julialang.org/c/domain/geo). More short-lived interaction is found on Julia [Slack #geo](https://slackinvite.julialang.org/). Feel free to create issues, PRs on packages.
 
