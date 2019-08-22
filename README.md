@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+## JuliaGeo
+JuliaGeo is an organization that contains a number of related Julia projects for manipulating, querying, and processing geospatial geometry data. We aim to provide a common interface between geospatial packages.
 
-You can use the [editor on GitHub](https://github.com/JuliaGeo/juliageo.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Get involved
+Communcation is mostly done on the Julia [Discourse](https://discourse.julialang.org/c/domain/geo). More short-lived interaction is found on Julia [Slack #geo](https://slackinvite.julialang.org/). Feel free to create issues, PRs on packages.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+We're currently discussing changes to our common GeoInterface.
 
-### Markdown
+### Packages
+Here's a partial listing of some of the existing libraries in julia that you can use for working with geospatial data. Not all of them are listed under the JuliaGeo organization, but some of them might get moved over.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+#### Wrappers for external libraries
+Using the excellent [BinaryBuilder.jl](https://github.com/JuliaPackaging/BinaryBuilder.jl) we try to provide prebuilt binaries for most external libraries.
+- [LibGEOS.jl](https://github.com/JuliaGeo/LibGEOS.jl) is a wrapper to GEOS for performing geospatial operations on vector geometries
+- [Proj4.jl](https://github.com/JuliaGeo/Proj4.jl) is a wrapper to PROJ.4 for performing cartographic projections
+- [GDAL.jl](https://github.com/JuliaGeo/GDAL.jl) is a wrapper to GDAL (Geospatial Data Abstraction Library) for reading and writing raster and vector datasets; [ArchGDAL.jl](https://github.com/yeesian/ArchGDAL.jl) builds on top of GDAL.jl for a more Julian user experience. [GeoArrays.jl](https://github.com/evetion/GeoArrays.jl) builds on top of both to provide the easiest, but simplest experience.
+- [NetCDF.jl](https://github.com/JuliaGeo/NetCDF.jl) and [NCDatasets.jl](https://github.com/Alexander-Barth/NCDatasets.jl) provides a high-level and a medium-level interface for writing and reading netcdf files.
+- [GMT.jl](https://github.com/joa-quim/GMT.jl) provides a wrapper for working with the [G]eneric [M]apping [T]ools (GMT) library in julia.
+- [LibSpatialIndex.jl](https://github.com/JuliaGeo/LibSpatialIndex.jl) provides functionality for spatially indexing kD bounding box data (based on [libspatialindex](https://github.com/libspatialindex/libspatialindex))
 
-```markdown
-Syntax highlighted code block
+#### Native Julia libraries
+- [GeoInterface.jl](https://github.com/JuliaGeo/GeoInterface.jl) is a Julia package defining the common interface between packages, currently mostly based on the GeoJSON format
+- [Geodesy.jl](https://github.com/JuliaGeo/Geodesy.jl) is a Julia package for working with points defined in different coordinate systems, with support for LLA/ENU/ECEF currently.
+- [CoordinateTransformations.jl](https://github.com/FugroRoames/CoordinateTransformations.jl) is a Julia package to manage simple or complex networks of coordinate system transformations.
+- [Shapefile.jl](https://github.com/JuliaGeo/Shapefile.jl) is a Julia package that parses in ESRI Shapefiles.
+- [GeoJSON.jl](https://github.com/JuliaGeo/GeoJSON.jl) is a Julia package that provides utilities for encoding and decoding GeoJSON formatted data.
+- [NearestNeighbors.jl](https://github.com/KristofferC/NearestNeighbors.jl) is Julia package to perform high performance nearest neighbor searches in arbitrarily high dimensions.
+- [GeoStats.jl](https://github.com/juliohm/GeoStats.jl) is an extensible Julia framework for high-performance geostatistics
 
-# Header 1
-## Header 2
-### Header 3
+#### Other Projects
+- [OpenStreetMap.jl](https://github.com/tedsteiner/OpenStreetMap.jl) and [OpenStreetMap2.jl](https://github.com/yeesian/OpenStreetMap2.jl) provides basic functionality for parsing, viewing, and working with OpenStreetMap map data.
+- [LasIO.jl](https://github.com/visr/LasIO.jl) is native Julia package for working with .las pointcloud data. [LazIO.jl](https://github.com/evetion/LazIO.jl) does the same for compressed .laz pointcloud data.
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JuliaGeo/juliageo.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
