@@ -25,6 +25,7 @@ Using the excellent [BinaryBuilder.jl](https://github.com/JuliaPackaging/BinaryB
 - [SpatialIndexing.jl](https://github.com/alyst/SpatialIndexing.jl) provides a native RTree implementation.
 - [RegionTrees.jl](https://github.com/rdeits/RegionTrees.jl) provides Quadtrees, Octrees and their N-Dimensional cousins. 
 - [GeoStats.jl](https://github.com/juliohm/GeoStats.jl) is an extensible Julia framework for high-performance geostatistics
+- [Turf.jl](https://github.com/philoez98/Turf.jl) A spatial analysis library written in Julia, ported from the great Turf.js
 
 #### Other Projects
 - [OpenStreetMapX.jl](https://github.com/pszufe/OpenStreetMapX.jl) provides basic functionality for parsing, viewing, and working with OpenStreetMap map data.
