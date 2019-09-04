@@ -3,6 +3,9 @@ Communcation is mostly done on the Julia [Discourse](https://discourse.julialang
 
 We're currently discussing changes to our common GeoInterface.
 
+### Talks
+The first presentation about JuliaGeo was at FOSS4G 2019 Bucharest. Video is [here](https://media.ccc.de/v/bucharest-428-juliageo-a-fresh-approach-to-geospatial-computing) and the corresponding slide are [here](https://nextjournal.com/juliageo/foss4g-2019).
+
 ### Packages
 Here's a partial listing of some of the existing libraries in julia that you can use for working with geospatial data. Not all of them are listed under the JuliaGeo organization, but some of them might get moved over.
 
