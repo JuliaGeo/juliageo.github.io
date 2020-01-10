@@ -6,6 +6,9 @@ We're currently discussing changes to our common GeoInterface.
 ### Talks
 - FOSS4G 2019 Bucharest by @visr, @evetion. JuliaGeo: A Fresh Approach to Geospatial Computing. [Video](https://media.ccc.de/v/bucharest-428-juliageo-a-fresh-approach-to-geospatial-computing), [Slides](https://nextjournal.com/juliageo/foss4g-2019).
 
+### GitHub organizations
+The [JuliaGeo](https://github.com/JuliaGeo) GitHub organization is intended primarily for the collaborative development of packages that are generally applicable across the geospatial and geosciences domains. For dealing with geospatial data, packages from the [JuliaGeometry](https://github.com/JuliaGeometry) and [JuliaImages](https://github.com/JuliaImages) organizations may also be of interest, and we will aim for good integration with those. Since the JuliaGeo organization aims to provide mostly general tools, more domain specific packages may be better suited for development in domain specific organizations. [JuliaClimate](https://github.com/JuliaClimate) is a nice example of such an organization that will be especially interesting to climate, atmosphere and ocean scientists.
+
 ### Packages
 Here's a partial listing of some of the existing libraries in julia that you can use for working with geospatial data. Not all of them are listed under the JuliaGeo organization, but some of them might get moved over.
 
