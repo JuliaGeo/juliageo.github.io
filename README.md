@@ -1,5 +1,5 @@
 ### Get involved
-Communcation is mostly done on the Julia [Discourse](https://discourse.julialang.org/c/domain/geo). More short-lived interaction is found on Julia [Slack #geo](https://slackinvite.julialang.org/). Feel free to create issues, PRs on packages.
+Communcation is mostly done on the Julia [Discourse](https://discourse.julialang.org/c/domain/geo). More short-lived interaction is found on Julia [Slack #geo](https://julialang.org/slack/). Feel free to create issues, PRs on packages.
 
 We're currently discussing changes to our common GeoInterface.
 
