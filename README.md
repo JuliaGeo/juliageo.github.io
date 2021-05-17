@@ -8,6 +8,7 @@ We're currently discussing changes to our common GeoInterface.
 
 ### GitHub organizations
 The [JuliaGeo](https://github.com/JuliaGeo) GitHub organization is intended primarily for the collaborative development of packages that are generally applicable across the geospatial and geosciences domains. For dealing with geospatial data, packages from the [JuliaGeometry](https://github.com/JuliaGeometry) and [JuliaImages](https://github.com/JuliaImages) organizations may also be of interest, and we will aim for good integration with those. Since the JuliaGeo organization aims to provide mostly general tools, more domain specific packages may be better suited for development in domain specific organizations. [JuliaClimate](https://github.com/JuliaClimate) is a nice example of such an organization that will be especially interesting to climate, atmosphere and ocean scientists.
+[EcoJulia](https://github.com/EcoJulia) also provides some tools for generating and downloading spatial data sets, with a focus on ecological applications.
 
 ### Packages
 Here's a partial listing of some of the existing libraries in julia that you can use for working with geospatial data. Not all of them are listed under the JuliaGeo organization, but some of them might get moved over.
@@ -17,6 +18,7 @@ Using the excellent [BinaryBuilder.jl](https://github.com/JuliaPackaging/BinaryB
 - [LibGEOS.jl](https://github.com/JuliaGeo/LibGEOS.jl) is a wrapper to GEOS for performing geospatial operations on vector geometries
 - [Proj4.jl](https://github.com/JuliaGeo/Proj4.jl) is a wrapper to PROJ.4 for performing cartographic projections
 - [GDAL.jl](https://github.com/JuliaGeo/GDAL.jl) is a wrapper to GDAL (Geospatial Data Abstraction Library) for reading and writing raster and vector datasets; [ArchGDAL.jl](https://github.com/yeesian/ArchGDAL.jl) builds on top of GDAL.jl for a more Julian user experience. [GeoArrays.jl](https://github.com/evetion/GeoArrays.jl) builds on top of both to provide the easiest, but simplest experience.
+- [GeoData.jl](https://github.com/rafaqz/GeoData.jl) provides a standardised interface to read, write and manipulate multidimensional raster data, wrapping ArchGDAL.jl and NCDatasets.jl and custom HDF5.jl sources.
 - [NetCDF.jl](https://github.com/JuliaGeo/NetCDF.jl) and [NCDatasets.jl](https://github.com/Alexander-Barth/NCDatasets.jl) provides a high-level and a medium-level interface for writing and reading netcdf files.
 - [GMT.jl](https://github.com/joa-quim/GMT.jl) provides a wrapper for working with the [G]eneric [M]apping [T]ools (GMT) library in julia.
 - [LibSpatialIndex.jl](https://github.com/JuliaGeo/LibSpatialIndex.jl) provides functionality for spatially indexing kD bounding box data (based on [libspatialindex](https://github.com/libspatialindex/libspatialindex))
@@ -32,6 +34,7 @@ Using the excellent [BinaryBuilder.jl](https://github.com/JuliaPackaging/BinaryB
 - [RegionTrees.jl](https://github.com/rdeits/RegionTrees.jl) provides Quadtrees, Octrees and their N-Dimensional cousins. 
 - [GeoStats.jl](https://github.com/juliohm/GeoStats.jl) is an extensible Julia framework for high-performance geostatistics
 - [Turf.jl](https://github.com/philoez98/Turf.jl) A spatial analysis library written in Julia, ported from the great Turf.js
+- [RasterDataSources.jl](https://github.com/EcoJulia/RasterDataSources.jl) Simplifies downloads of environmental raster data like WorldClim, EarthEnv and CHELSA. 
 
 #### Other Projects
 - [OpenStreetMapX.jl](https://github.com/pszufe/OpenStreetMapX.jl) provides basic functionality for parsing, viewing, and working with OpenStreetMap map data.
