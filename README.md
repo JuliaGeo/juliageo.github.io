@@ -11,7 +11,7 @@ The [JuliaGeo](https://github.com/JuliaGeo) GitHub organization is intended prim
 [EcoJulia](https://github.com/EcoJulia) also provides some tools for generating and downloading spatial data sets, with a focus on ecological applications.
 
 ### Packages
-Here's a partial listing of some of the existing libraries in julia that you can use for working with geospatial data. Not all of them are listed under the JuliaGeo organization, but some of them might get moved over.
+Here's a partial listing of some of the existing libraries in [Julia](https://julialang.org/) that you can use for working with geospatial data. Not all of them are listed under the JuliaGeo organization, but some of them might get moved over.
 
 #### Wrappers for external libraries
 Using the excellent [BinaryBuilder.jl](https://github.com/JuliaPackaging/BinaryBuilder.jl) we try to provide prebuilt binaries for most external libraries.
