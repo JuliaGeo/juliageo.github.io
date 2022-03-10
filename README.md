@@ -18,7 +18,7 @@ Using the excellent [BinaryBuilder.jl](https://github.com/JuliaPackaging/BinaryB
 - [LibGEOS.jl](https://github.com/JuliaGeo/LibGEOS.jl) is a wrapper to GEOS for performing geospatial operations on vector geometries
 - [Proj4.jl](https://github.com/JuliaGeo/Proj4.jl) is a wrapper to PROJ.4 for performing cartographic projections
 - [GDAL.jl](https://github.com/JuliaGeo/GDAL.jl) is a wrapper to GDAL (Geospatial Data Abstraction Library) for reading and writing raster and vector datasets; [ArchGDAL.jl](https://github.com/yeesian/ArchGDAL.jl) builds on top of GDAL.jl for a more Julian user experience. [GeoArrays.jl](https://github.com/evetion/GeoArrays.jl) builds on top of both to provide the easiest, but simplest experience.
-- [GeoData.jl](https://github.com/rafaqz/GeoData.jl) provides a standardised interface to read, write and manipulate multidimensional raster data, wrapping ArchGDAL.jl and NCDatasets.jl and custom HDF5.jl sources.
+- [Rasters.jl](https://github.com/rafaqz/Rasters.jl) defines common types and methods for reading, writing and manipulating rasterized spatial data.
 - [NetCDF.jl](https://github.com/JuliaGeo/NetCDF.jl) and [NCDatasets.jl](https://github.com/Alexander-Barth/NCDatasets.jl) provides a high-level and a medium-level interface for writing and reading netcdf files.
 - [GeoDataFrames.jl](https://github.com/evetion/GeoDataFrames.jl) provides simple geographical vector interaction built on top of ArchGDAL with a Tables.jl interface.
 - [GMT.jl](https://github.com/joa-quim/GMT.jl) provides a wrapper for working with the [G]eneric [M]apping [T]ools (GMT) library in julia.
