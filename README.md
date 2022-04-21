@@ -40,6 +40,7 @@ Using the excellent [BinaryBuilder.jl](https://github.com/JuliaPackaging/BinaryB
 #### Other Projects
 - [OpenStreetMapX.jl](https://github.com/pszufe/OpenStreetMapX.jl) provides basic functionality for parsing, viewing, and working with OpenStreetMap map data.
 - [LasIO.jl](https://github.com/visr/LasIO.jl) is native Julia package for working with .las pointcloud data. [LazIO.jl](https://github.com/evetion/LazIO.jl) does the same for compressed .laz pointcloud data.
+- [GeoMakie.jl](https://github.com/JuliaPlots/GeoMakie.jl) adds cartography to the [Makie.jl](https://makie.juliaplots.org/stable/) plotting package.
 - [OSMMakie.jl](https://github.com/fbanning/OSMMakie.jl) is a [Makie.jl](https://makie.juliaplots.org/stable/) recipe for plotting OpenStreetMap data. It works on top of [LightOSM.jl](https://github.com/DeloitteDigitalAPAC/LightOSM.jl) and currently provides basic functionality to plot all kinds of ways and buildings.
 
 
