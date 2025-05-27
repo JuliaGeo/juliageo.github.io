@@ -1,22 +1,22 @@
 
 ##  JuliaGeo
->The [JuliaGeo](https://github.com/JuliaGeo) GitHub organization serves as a focal point for developing and maintaining the next generation of tooling for geospatial analysis. It aims to leverage the intuitive syntax and high-performance of the [Julia language](https://julialang.org/) to provide robust, efficient, and easy-to-use tools for working with geographic data.
+The [JuliaGeo](https://github.com/JuliaGeo) GitHub organization serves as a focal point for developing and maintaining the next generation of tooling for geospatial analysis. It aims to leverage the intuitive syntax and high-performance of the [Julia language](https://julialang.org/) to provide robust, efficient, and easy-to-use tools for working with geographic data.
 
 ## Get involved
->JuliaGeo fosters a collaborative environment for creating a comprehensive geospatial toolkit within >the Julia ecosystem. Communication is mostly done on:
->1. [Julia Geo Discourse](https://discourse.julialang.org/c/domain/geo) for general questions on the >JuliaGeo ecosystem 
->2. [Slack #geo](https://julialang.org/slack/) for more short-lived interaction. 
->
->Feel free to create issues and/or PRs on packages.
+JuliaGeo fosters a collaborative environment for creating a comprehensive geospatial toolkit within the Julia ecosystem. Communication is mostly done on:
+1. [Julia Geo Discourse](https://discourse.julialang.org/c/domain/geo) for general questions on the JuliaGeo ecosystem 
+2. [Slack #geo](https://julialang.org/slack/) for more short-lived interaction. 
+
+Feel free to create issues and/or PRs on packages.
 
 ## High-level packages
->Most geospatial analysis can be accomplished with these three packages (in combination with extensions as needed):
->
->1. [Rasters.jl](https://rafaqz.github.io/Rasters.jl/dev/) provides a powerful Julia framework for reading, writing, and manipulating rasterized spatial data, such as satellite imagery or climate model outputs. It offers a standardized interface to work with various data formats and in-memory arrays through Raster, RasterStack, and RasterSeries types, simplifying complex geospatial workflows. Rasters.jl provides [significant performance gains](https://github.com/user-attachments/assets/1c6c56ac-4c5a-4096-984d-15bf2783682c) over similar packages in other languages.
->
->2. [GeoDataFrames.jl](https://www.evetion.nl/GeoDataFrames.jl/dev/) enables the handling of geospatial vector data in Julia by integrating geometric operations directly within DataFrame structures, inspired by Python's [GeoPandas](https://geopandas.org/en/stable/). It achieves this by treating a vector of geometries as a column, allowing for intuitive spatial data manipulation and analysis alongside tabular attributes.
->
->3. [GeometryOps.jl](https://juliageo.org/GeometryOps.jl/dev/) provides a suite of highly efficent geometric operations for vector data (i.e. points, lines, polygons), designed to work seamlessly with any [GeoInterface.jl](https://juliageo.org/GeoInterface.jl/dev/) compatible geometry. It aims to unify geometric calculations within the Julia ecosystem by offering pure Julia implementations of common spatial functions crucial for GIS and Earth data workflows. GeometryOps.jl provides [significant performance gains](https://github.com/JuliaGeo/GeometryOps.jl/assets/32143268/0be8672c-c90f-4e1d-81c5-8522317c5e29) over similar packages in other languages.
+Most geospatial analysis can be accomplished with these three packages (in combination with extensions as needed):
+
+1. [Rasters.jl](https://rafaqz.github.io/Rasters.jl/dev/) provides a powerful Julia framework for reading, writing, and manipulating rasterized spatial data, such as satellite imagery or climate model outputs. It offers a standardized interface to work with various data formats and in-memory arrays through Raster, RasterStack, and RasterSeries types, simplifying complex geospatial workflows. Rasters.jl provides [significant performance gains](https://github.com/user-attachments/assets/1c6c56ac-4c5a-4096-984d-15bf2783682c) over similar packages in other languages.
+
+2. [GeoDataFrames.jl](https://www.evetion.nl/GeoDataFrames.jl/dev/) enables the handling of geospatial vector data in Julia by integrating geometric operations directly within DataFrame structures, inspired by Python's [GeoPandas](https://geopandas.org/en/stable/). It achieves this by treating a vector of geometries as a column, allowing for intuitive spatial data manipulation and analysis alongside tabular attributes.
+
+3. [GeometryOps.jl](https://juliageo.org/GeometryOps.jl/dev/) provides a suite of highly efficent geometric operations for vector data (i.e. points, lines, polygons), designed to work seamlessly with any [GeoInterface.jl](https://juliageo.org/GeoInterface.jl/dev/) compatible geometry. It aims to unify geometric calculations within the Julia ecosystem by offering pure Julia implementations of common spatial functions crucial for GIS and Earth data workflows. GeometryOps.jl provides [significant performance gains](https://github.com/JuliaGeo/GeometryOps.jl/assets/32143268/0be8672c-c90f-4e1d-81c5-8522317c5e29) over similar packages in other languages.
 
 ## Inter-package operability
 [GeoInterface.jl](https://juliageo.org/GeoInterface.jl/dev/) serves as a Julia protocol and interface for handling geospatial data. It provides a set of traits based on the Simple Features standard, enabling the parsing, serialization, and usage of various geometries within the Julia ecosystem.
