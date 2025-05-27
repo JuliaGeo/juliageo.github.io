@@ -1,91 +1,78 @@
-### Get involved
-Communcation is mostly done on the Julia
-[Discourse](https://discourse.julialang.org/c/domain/geo). More short-lived interaction is
-found on Julia [Slack #geo](https://julialang.org/slack/). Feel free to create issues, PRs
-on packages.
 
-### Talks
-- FOSS4G 2019 Bucharest by [Martijn Visser](https://github.com/visr) and [Maarten
-  Pronk](https://github.com/evetion). JuliaGeo: A Fresh Approach to Geospatial Computing.
-  [Video](https://media.ccc.de/v/bucharest-428-juliageo-a-fresh-approach-to-geospatial-computing),
-  [Slides](https://nextjournal.com/juliageo/foss4g-2019).
+##  JuliaGeo
+The [JuliaGeo](https://github.com/JuliaGeo) GitHub organization serves as a focal point for developing and maintaining the next generation of tooling for geospatial analysis. It aims to leverage the intuitive syntax and high-performance of the [Julia language](https://julialang.org/) to provide robust, efficient, and easy-to-use tools for working with geographic data.
 
-### GitHub organizations
-The [JuliaGeo](https://github.com/JuliaGeo) GitHub organization is intended primarily for
-the collaborative development of packages that are generally applicable across the
-geospatial and geosciences domains. For dealing with geospatial data, packages from the
-[JuliaGeometry](https://github.com/JuliaGeometry) and
-[JuliaImages](https://github.com/JuliaImages) organizations may also be of interest, and we
-will aim for good integration with those. Since the JuliaGeo organization aims to provide
-mostly general tools, more domain specific packages may be better suited for development in
-domain specific organizations. [JuliaClimate](https://github.com/JuliaClimate) is a nice
-example of such an organization that will be especially interesting to climate, atmosphere
-and ocean scientists. [EcoJulia](https://github.com/EcoJulia) also provides some tools for
-generating and downloading spatial data sets, with a focus on ecological applications.
+## Get involved
+JuliaGeo fosters a collaborative environment for creating a comprehensive geospatial toolkit within the Julia ecosystem. Communication is mostly done on:
+1. [Julia Geo Discourse](https://discourse.julialang.org/c/domain/geo) for general questions on the JuliaGeo ecosystem 
+2. [Slack #geo](https://julialang.org/slack/) for more short-lived interaction. 
 
-### Packages
-Here's a partial listing of some of the existing libraries in
-[Julia](https://julialang.org/) that you can use for working with geospatial data. Not all
-of them are listed under the JuliaGeo organization, but some of them might get moved over.
+Feel free to create issues and/or PRs on packages.
 
-#### Wrappers for external libraries
-Using the excellent [BinaryBuilder.jl](https://binarybuilder.org/) we provide prebuilt
-binaries for most external libraries.
-- [LibGEOS.jl](https://github.com/JuliaGeo/LibGEOS.jl) is a wrapper to GEOS for performing
-  geospatial operations on vector geometries.
-- [Proj.jl](https://github.com/JuliaGeo/Proj.jl) is a wrapper to PROJ for performing
-  cartographic projections.
-- [GDAL.jl](https://github.com/JuliaGeo/GDAL.jl) is a wrapper to GDAL (Geospatial Data
-  Abstraction Library) for reading and writing raster and vector datasets;
-  [ArchGDAL.jl](https://github.com/yeesian/ArchGDAL.jl) builds on top of GDAL.jl for a more
-  Julian user experience. [GeoArrays.jl](https://github.com/evetion/GeoArrays.jl) builds on
-  top of both to provide the easiest, but simplest experience.
-- [Rasters.jl](https://github.com/rafaqz/Rasters.jl) defines common types and methods for
-  reading, writing and manipulating rasterized spatial data.
-- [NetCDF.jl](https://github.com/JuliaGeo/NetCDF.jl) and
-  [NCDatasets.jl](https://github.com/Alexander-Barth/NCDatasets.jl) provides a high-level
-  and a medium-level interface for writing and reading netcdf files.
-- [GeoDataFrames.jl](https://github.com/evetion/GeoDataFrames.jl) provides simple
-  geographical vector interaction built on top of ArchGDAL with a Tables.jl interface.
-- [GMT.jl](https://github.com/joa-quim/GMT.jl) provides a wrapper for working with the
-  Generic Mapping Tools (GMT) library in julia.
-- [LibSpatialIndex.jl](https://github.com/JuliaGeo/LibSpatialIndex.jl) provides
-  functionality for spatially indexing kD bounding box data (based on
-  [libspatialindex](https://github.com/libspatialindex/libspatialindex)).
+## High-level packages
+Most geospatial analysis can be accomplished with these three packages (in combination with extensions as needed):
 
-#### Native Julia libraries
-- [GeoInterface.jl](https://github.com/JuliaGeo/GeoInterface.jl) defines a common interface
-  for vector operations, and traits to support interoperability between different geometry
-  types
-- [Geodesy.jl](https://github.com/JuliaGeo/Geodesy.jl) supports working with points defined
-  in different coordinate systems, with support for LLA/ENU/ECEF.
-- [CoordinateTransformations.jl](https://github.com/JuliaGeometry/CoordinateTransformations.jl)
-  manages simple or complex networks of coordinate system transformations.
-- [Shapefile.jl](https://github.com/JuliaGeo/Shapefile.jl) reads ESRI Shapefiles.
-- [GeoJSON.jl](https://github.com/JuliaGeo/GeoJSON.jl) reads and writes GeoJSON.
-- [NearestNeighbors.jl](https://github.com/KristofferC/NearestNeighbors.jl) is Julia package
-  to perform high performance nearest neighbor searches in arbitrarily high dimensions. It
-  uses Kd-trees.
-- [SpatialIndexing.jl](https://github.com/alyst/SpatialIndexing.jl) provides a native RTree
-  implementation.
-- [RegionTrees.jl](https://github.com/rdeits/RegionTrees.jl) provides Quadtrees, Octrees and
-  their N-Dimensional cousins. 
-- [GeoStats.jl](https://github.com/JuliaEarth/GeoStats.jl) is an extensible Julia framework
-  for high-performance geostatistics
-- [Turf.jl](https://github.com/philoez98/Turf.jl) A spatial analysis library written in
-  Julia, ported from the great [Turf.js](https://turfjs.org/)
-- [RasterDataSources.jl](https://github.com/EcoJulia/RasterDataSources.jl) Simplifies
-  downloads of environmental raster data like WorldClim, EarthEnv and CHELSA. 
+1. [Rasters.jl](https://rafaqz.github.io/Rasters.jl/dev/) provides a powerful Julia framework for reading, writing, and manipulating rasterized spatial data, such as satellite imagery or climate model outputs. It offers a standardized interface to work with various data formats and in-memory arrays through Raster, RasterStack, and RasterSeries types, simplifying complex geospatial workflows. Rasters.jl provides [significant performance gains](https://github.com/user-attachments/assets/1c6c56ac-4c5a-4096-984d-15bf2783682c) over similar packages in other languages.
 
-#### Other Projects
-- [OpenStreetMapX.jl](https://github.com/pszufe/OpenStreetMapX.jl) provides basic
-  functionality for parsing, viewing, and working with OpenStreetMap map data.
-- [LasIO.jl](https://github.com/visr/LasIO.jl) is native Julia package for working with .las
-  pointcloud data. [LazIO.jl](https://github.com/evetion/LazIO.jl) does the same for
-  compressed .laz pointcloud data.
-- [GeoMakie.jl](https://github.com/JuliaPlots/GeoMakie.jl) adds cartography to the
-  [Makie.jl](https://makie.juliaplots.org/stable/) plotting package.
-- [OSMMakie.jl](https://github.com/fbanning/OSMMakie.jl) is a
-  [Makie.jl](https://makie.juliaplots.org/stable/) recipe for plotting OpenStreetMap data.
-  It works on top of [LightOSM.jl](https://github.com/DeloitteDigitalAPAC/LightOSM.jl) and
-  currently provides basic functionality to plot all kinds of ways and buildings.
+2. [GeoDataFrames.jl](https://www.evetion.nl/GeoDataFrames.jl/dev/) enables the handling of geospatial vector data in Julia by integrating geometric operations directly within DataFrame structures, inspired by Python's [GeoPandas](https://geopandas.org/en/stable/). It achieves this by treating a vector of geometries as a column, allowing for intuitive spatial data manipulation and analysis alongside tabular attributes.
+
+3. [GeometryOps.jl](https://juliageo.org/GeometryOps.jl/dev/) provides a suite of highly efficent geometric operations for vector data (i.e. points, lines, polygons), designed to work seamlessly with any [GeoInterface.jl](https://juliageo.org/GeoInterface.jl/dev/) compatible geometry. It aims to unify geometric calculations within the Julia ecosystem by offering pure Julia implementations of common spatial functions crucial for GIS and Earth data workflows. GeometryOps.jl provides [significant performance gains](https://github.com/JuliaGeo/GeometryOps.jl/assets/32143268/0be8672c-c90f-4e1d-81c5-8522317c5e29) over similar packages in other languages.
+
+## Inter-package operability
+[GeoInterface.jl](https://juliageo.org/GeoInterface.jl/dev/) serves as a Julia protocol and interface for handling geospatial data. It provides a set of traits based on the Simple Features standard, enabling the parsing, serialization, and usage of various geometries within the Julia ecosystem.
+
+[GeoFormatTypes.jl](https://github.com/JuliaGeo/GeoFormatTypes.jl): Defines wrapper types to make it easy to pass and dispatch on geographic formats (like Well Known Text) between packages.
+
+[CommonDataModel.jl](https://github.com/JuliaGeo/CommonDataModel.jl): Defines a common data model for NetCDF, GRIB, Zarr, and GeoTIFF datasets.
+
+## Visualization
+See [Makie](https://docs.makie.org/stable/) and [Plots.jl](https://docs.juliaplots.org/stable/) for general purpose plotting.
+
+[Tyler.jl](https://github.com/MakieOrg/Tyler.jl) for displaying tiled maps interactively with [Makie](https://docs.makie.org/stable/).
+
+[GeoMakie.jl](https://github.com/MakieOrg/GeoMakie.jl) for geographic plotting utilities using [Makie](https://docs.makie.org/stable/).
+
+
+## Lower-level file I/O - native Julia
+[NCDatasets.jl](https://github.com/JuliaGeo/NCDatasets.jl): For working with NetCDF files, a common format for scientific data, including climate and oceanographic data. (Also NetCDF.jl exists).
+
+[GeoJSON.jl](https://github.com/JuliaGeo/GeoJSON.jl): Offers utilities for reading, writing, and manipulating GeoJSON data, a widely used open standard format for encoding geographic data structures.
+
+[Shapefile.jl](https://github.com/JuliaGeo/Shapefile.jl): Enables the reading and writing of ESRI Shapefiles, a common vector data format in GIS.
+
+[GeoParquet.jl](https://github.com/JuliaGeo/GeoParquet.jl): Facilitates working with geospatial data stored in Parquet files.
+
+[LazIO](https://github.com/evetion/LazIO.jl): Enables the reading and writing of Laz files.
+
+[STAC.jl](https://github.com/JuliaClimate/STAC.jl): SpatioTemporal Asset Catalogs (STAC) client in Julia
+
+[FlatGeobuf.jl](https://github.com/evetion/FlatGeobuf.jl): A native flatgeobuf implementation in Julia
+
+## Lower-level packages - C bindings
+[ArchGDAL.jl](https://yeesian.com/ArchGDAL.jl) A complete solution for working with GDAL in Julia.
+
+[GDAL.jl](https://github.com/JuliaGeo/GDAL.jl): A Julia wrapper for the powerful Geospatial Data Abstraction Library (GDAL), enabling the reading and writing of a vast array of raster and vector geospatial data formats.
+
+[LibGEOS.jl](https://github.com/JuliaGeo/LibGEOS.jl): A wrapper for the GEOS (Geometry Engine - Open Source) library, offering a wide range of geometry operations.
+
+[Proj.jl](https://github.com/JuliaGeo/Proj.jl): A Julia wrapper for the PROJ library, which is a standard for coordinate transformations and cartographic projections. (Note: Proj4.jl was an older version, with Proj.jl being the more current wrapper).
+
+
+## Access to geospatial datasets
+[MapTiles.jl](https://github.com/JuliaGeo/MapTiles.jl): For working with tiled web maps.
+
+[GADM.j](https://github.com/JuliaGeo/GADM.jl): Provides access to the GADM dataset of global administrative areas.
+
+[NaturalEarth.jl](https://github.com/JuliaGeo/NaturalEarth.jl) Interface to the Natural Earth dataset.
+
+[GeoDatasets.jl](https://github.com/JuliaGeo/GeoDatasets.jl) Access to common geographic datasets.
+
+[SpaceLiDAR.jl](https://github.com/evetion/SpaceLiDAR.jl) Utilities for accessing and working with satellite altimetry data (i.e. ICESat, ICESat-2, GEDI)
+
+
+## Geospatial analysis packages
+[Geomorphometry.jl](https://deltares.github.io/Geomorphometry.jl/v0.7.0/) Geospatial operations, cost and filtering algorithms as used for elevation rasters.
+
+[Geodesy.jl](https://github.com/JuliaGeo/Geodesy.jl): Provides tools for working with points defined in various coordinate systems (e.g., LLA, ECEF, ENU) and performing geodetic calculations.
+
+[SortTileRecursiveTree.jl](https://github.com/asinghvi17/SortTileRecursiveTree.jl) An Sort-Tile-Recursive (SRT) tree implementation for GeoInterface compatible geometries.
